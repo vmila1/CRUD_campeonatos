@@ -1,3 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img.logo_menor {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header p {
+    color: #666;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5857ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4746d1;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #5857ff;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.action-link {
+    color: #5857ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.action-link:hover {
+    color: #333;
+}
+
+.action-link.delete {
+    color: #d9534f;
+}
+
+.action-link.delete:hover {
+    color: #c9302c;
+}
+
+/* Ajuste para ícones */
+.action-link i {
+    font-size: 1rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.9rem;
+    }
+}
+
+
 /* Reseta o estilo padrão */
 * {
     margin: 0;
@@ -207,3 +338,129 @@ input[type="date"]:focus {
     color: #fff;
 }
 
+/* Container principal */
+.container {
+    width: 90%; /* Ocupa quase toda a largura */
+    max-width: 1200px; /* Máximo de 1200px */
+    margin: 20px auto; /* Centralizado */
+    padding: 20px;
+    background-color: #eef0ff; /* Fundo azul claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.logo_menor {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #5857ff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #4746d1;
+    transform: scale(1.05);
+}
+
+/* Tabela */
+.table-container {
+    margin-top: 30px;
+    width: 100%; /* Largura total */
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+table {
+    width: 100%; /* Força a largura total */
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #5857ff;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Links de ação */
+.action-link {
+    color: #5857ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link i {
+    margin-right: 5px;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+.action-link.delete {
+    color: #d9534f;
+}
+
+.action-link.delete:hover {
+    color: #c9302c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}

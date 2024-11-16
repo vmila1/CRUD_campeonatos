@@ -9,7 +9,7 @@ Para executar este projeto, é necessário ter o [XAMPP](https://www.apachefrien
 ### Instalação do XAMPP
 
 1. Acesse o site oficial do [XAMPP](https://www.apachefriends.org/pt_br/index.html).
-2. Baixe a versão compatível com o seu sistema operacional.
+2. Baixe a versão do seu sistema operacional.
 3. Siga o guia de instalação para configurar o XAMPP corretamente.
 
 ## Configuração do Projeto
