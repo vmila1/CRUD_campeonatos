@@ -1,4 +1,4 @@
-# GameChamps - Sistema de Criação de Campeonatos
+# Sistema de Criação de Campeonatos
 
 Este projeto é uma aplicação web simples para criação e gerenciamento de campeonatos de e-sports. O sistema permite adicionar informações como nome do campeonato, data de início e data de término. 
 
